@@ -1,0 +1,38 @@
+﻿<Window x:Class="Estaciones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Estaciones"
+        mc:Ignorable="d"
+        Title="Las 4 estaciones" Height="450" Width="800"
+        Icon="img/sun.ico">
+
+    <Grid Background="DarkSalmon">
+        <TextBlock Text="Las 4 Estaciones" HorizontalAlignment="Center" FontSize="36" FontStyle="Italic" FontFamily="Vivaldi" >
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFAF00D6" Offset="0"/>
+                    <GradientStop Color="#FF29212B" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+            <TextBlock.Effect>
+                <DropShadowEffect></DropShadowEffect>
+            </TextBlock.Effect>
+        </TextBlock>
+    <UniformGrid Rows="2" Columns="2" Margin="40">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+            <Image Source="img/invierno.jpg"  Stretch="None"></Image>
+        </ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+            <Image Source="img/primavera.jpg"  Stretch="None"></Image>
+        </ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+            <Image Source="img/verano.jpg"  Stretch="None"></Image>
+        </ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+            <Image Source="img/otoño.jpg" Stretch="None"></Image>
+        </ScrollViewer>
+    </UniformGrid>
+    </Grid>
+</Window>
